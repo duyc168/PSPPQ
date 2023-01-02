@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=0 python PSPPQ.py \
+    --d_model 512 \
+    --mbits 64 \
+    --epoch 90 \
+    --test_period 3 \
+    --lr 5e-3 \
+    --batch_sz 50 \
+    --dataset MSCOCO \
+    --alpha 8.0 \
+    --s 3.0 --margin 0.7 \
+    --lam1 1.0 --lam2 0.7 --lam3 0.0 \
+    --Qgama 10 \
+    --warmup 15 \
+    --w 0.8
